@@ -73,3 +73,7 @@ export interface IMessageLocation {
 export interface IMessageReaction {
   [emoji: string]: { usernames: string[] } // emoji: [usernames that reacted]
 }
+
+export interface IMessageOpts {
+  useLegacyBotFormat?: boolean; // Enables/disables legacy mode when `bot` = { i: string }. activate from 7.2
+}
