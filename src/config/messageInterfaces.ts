@@ -75,5 +75,9 @@ export interface IMessageReaction {
 }
 
 export interface IMessageOpts {
-  useLegacyBotFormat?: boolean; // Enables/disables legacy mode when `bot` = { i: string }. activate from 7.2
+  /**
+   * If true, the Message class will use the legacy bot format: { i: string }.
+   * If false or unspecified, the class will set bot to true.
+   */
+  useLegacyBotFormat?: boolean
 }

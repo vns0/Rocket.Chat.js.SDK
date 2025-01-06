@@ -68,3 +68,10 @@ export interface IMessageReaction {
         usernames: string[];
     };
 }
+export interface IMessageOpts {
+    /**
+     * If true, the Message class will use the legacy bot format: { i: string }.
+     * If false or unspecified, the class will set bot to true.
+     */
+    useLegacyBotFormat?: boolean;
+}
